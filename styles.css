@@ -1,0 +1,73 @@
+*, *::after, *::before:not(i){
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito", sans-serif;
+}
+
+body{
+    background: rgb(178,231,232);
+    background: linear-gradient(70deg, rgba(178,231,232,1) 0%, rgba(247,209,255,1) 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+header{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    min-width: 500px;
+}
+
+.highscore{
+    display: flex;
+    justify-content: space-between;
+}
+
+.game{
+    display: flex;
+    justify-content: space-between;
+}
+
+.currentScore{
+    display: flex;
+}
+
+.clicks{
+    margin-right: 20px;
+}
+
+.gridContainer{
+    margin-top: 20px;
+    min-width: 500px;
+    display: grid;    
+    gap: 10px;
+}
+
+.card{
+    aspect-ratio: 1;
+    background-image: url(img/back.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    cursor:pointer;
+    transition: transform .3s;
+}
+
+.flipUp{
+    transform: rotate3d(0, 1, 0, 90deg) scale(1.1);
+}
+
+.c1 { background-image: url(img/1.png); }
+.c2 { background-image: url(img/2.png); }
+.c3 { background-image: url(img/3.png); }
+.c4 { background-image: url(img/4.png); }
+.c5 { background-image: url(img/5.png); }
+.c6 { background-image: url(img/6.png); }
+.c7 { background-image: url(img/7.png); }
+.c8 { background-image: url(img/8.png); }
+.c9 { background-image: url(img/9.png); }
+.c0 { background-image: url(img/0.png); }

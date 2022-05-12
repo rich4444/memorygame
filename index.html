@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;700&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.skypack.dev/sanitize.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>MEMORY GAME</h1>
+        <div class="highscore">
+            <h3>Highscore: <span id="bestScore">000000</span></h3>
+            <h3>Best time: <span id="bestTime">000000</span></h3>
+        </div>
+        <div class="game">
+            <select name="difficulty" id="difficulty">
+                <option value="easy">Easy</option>
+                <option value="normal">Normal</option>
+                <option value="hard">Hard</option>
+            </select>
+            <div class="currentScore">
+                <p class="clicks">Clicks: 00</p>
+                <p class="time">Time: 00</p>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="gridContainer">
+        </div>
+    </main>
+    
+</body>
+</html>
